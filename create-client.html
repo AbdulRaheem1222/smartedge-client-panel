@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Client Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial; background: #f1f5f9; padding: 20px; }
+    h2 { color: #111827; }
+    label { display: block; margin-top: 10px; }
+    input, select, button {
+      width: 100%%; padding: 10px; margin-top: 5px;
+      border-radius: 5px; border: 1px solid #ccc;
+    }
+    button {
+      background: #2563eb; color: white; border: none; margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Create New Client Panel</h2>
+  <form id="clientForm">
+    <label>Client Name</label>
+    <input type="text" required>
+
+    <label>Email (for login)</label>
+    <input type="email" required>
+
+    <label>Choose Plan</label>
+    <select>
+      <option>Starter</option>
+      <option>Business</option>
+      <option>Enterprise</option>
+    </select>
+
+    <label>Set Username</label>
+    <input type="text" required>
+
+    <label>Set Password</label>
+    <input type="password" required>
+
+    <button type="submit">Generate Panel</button>
+  </form>
+</body>
+</html>
